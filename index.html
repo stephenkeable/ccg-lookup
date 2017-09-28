@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Postcode to CCG lookup tool">
+        <title>Postcode to CCG lookup tool</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+        <!--<![endif]-->
+
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+        <!--[if lt IE 9]>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+        <![endif]-->
+        
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,900" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <h1>Postcode to CCG lookup tool</h1>  
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <form class="pure-form">
+                    <fieldset>
+                        
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode" autocomplete="off" placeholder="e.g. SW1A 1AA">
+
+                        <button id="lookup" class="pure-button pure-button-primary">Lookup</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <div id="output">
+                    <p class="placeholder">CCG details will appear here</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pure-g footer">
+            <div class="pure-u-1">
+                <p>Built by <a href="http://www.stephenkeable.co.uk">Stephen Keable</a> using <a href="https://postcodes.io">postcodes.io</a></p>
+                <p>Contains National Statistics data © Crown copyright and database right 2017</p>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
