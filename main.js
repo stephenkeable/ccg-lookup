@@ -48,7 +48,7 @@ lookup_button.addEventListener("click", function(e) {
 
 function lookup_ccg_by_postcode(postcode_field) {
     
-    var ccg_request_url = "http://api.postcodes.io/postcodes/" + encodeURIComponent(postcode_field.value.trim());
+    var ccg_request_url = "https://api.postcodes.io/postcodes/" + encodeURIComponent(postcode_field.value.trim());
     
     var ccg_request = new XMLHttpRequest();
                         
