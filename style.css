@@ -48,6 +48,9 @@ h1 {
 .footer {
     padding: 1em 0.2em 2em 0.2em;
 }
+p.explain {
+    font-weight: 400;
+}
 p.error {
     color: #C02D2B;
     font-weight: 900;
