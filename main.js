@@ -38,6 +38,7 @@ postcode_field.addEventListener("keyup", function(e) {
     if(e.keyCode === 13) {
         e.preventDefault();
         lookup_ccg_by_postcode(postcode_field);
+        postcode_field.blur();
     }
 });
 
