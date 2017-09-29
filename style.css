@@ -48,7 +48,7 @@ h1 {
 .footer {
     padding: 1em 0.2em 2em 0.2em;
 }
-p.explain {
+.pure-form p.explain {
     font-weight: 400;
 }
 p.error {
