@@ -6,7 +6,7 @@ var output_div = document.getElementById("output");
 
 var ccg_nhs_codes = {};
 
-var codes_request_url = "ccg-data.json";
+var codes_request_url = "ccg-data.min.json";
     
 var codes_request = new XMLHttpRequest();
 
