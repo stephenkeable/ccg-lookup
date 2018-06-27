@@ -1,0 +1,23 @@
+{
+  "name": "ccg-lookup",
+  "version": "1.0.0",
+  "description": "Basic tool to lookup Clincial Commissioning Group (CCG) names or codes using just a UK postcode.",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenkeable/ccg-lookup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephenkeable/ccg-lookup/issues"
+  },
+  "homepage": "https://github.com/stephenkeable/ccg-lookup#readme",
+  "devDependencies": {
+    "csv-parse": "^2.5.0",
+    "stream-transform": "^1.0.2"
+  }
+}
