@@ -5,7 +5,7 @@ https://stephenkeable.github.io/ccg-lookup/
 
 `CCG names and codes UK as at 04_18.csv` from the ONS NHS Postcode Directory.
 
-`data.js` is used to build the `ccg-data.min.json` file from the CSV above.
+`data.js` is Node JS script used to build the `ccg-data.min.json` file from the CSV above.
 
 ## Credits
 Lookup API from [postcodes.io](https://postcodes.io)
