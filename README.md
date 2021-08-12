@@ -1,7 +1,6 @@
 # Deprecated
 
-I won't be updating this tool going forward. I
-t looks like the ONS now has the data in seperate fields for Englang, Scotland and Wales rather than whole UK.
+I won't be updating this tool going forward. It looks like the ONS now has the data in seperate fields for England, Scotland and Wales rather than whole UK.
 
 The NHS provides it's own lookup tool:-
 https://www.nhs.uk/service-search/other-services/Clinical-Commissioning-Group/LocationSearch/1
