@@ -16,6 +16,10 @@ h1 {
 .pure-g [class *= "pure-u"] {
     text-align: center;
 }
+.pure-g [class *= "pure-u"] > * {
+    padding-left: 1em;
+    padding-right: 1em;
+}
 .pure-form {
     font-size: 1em;
     font-weight: 900;
@@ -69,4 +73,8 @@ a {
     .footer {
         padding: 4em 0.2em 2em 0.2em;
     }
+}
+
+.nhs-tool {
+    font-size: 1.4em;
 }

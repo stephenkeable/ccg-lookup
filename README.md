@@ -1,3 +1,12 @@
+# Deprecated
+
+I won't be updating this tool going forward. I
+t looks like the ONS now has the data in seperate fields for Englang, Scotland and Wales rather than whole UK.
+
+The NHS provides it's own lookup tool:-
+https://www.nhs.uk/service-search/other-services/Clinical-Commissioning-Group/LocationSearch/1
+
+
 # CCG Lookup
 Basic tool to lookup Clincial Commissioning Group (CCG) names or codes using just a UK postcode.
 

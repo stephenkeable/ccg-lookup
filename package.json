@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/stephenkeable/ccg-lookup#readme",
   "devDependencies": {
-    "csv-parse": "^2.5.0",
+    "csv-parse": "^4.16.0",
     "stream-transform": "^1.0.2"
   }
 }
