@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Find a CCG by postcode">
-        <title>Clinical Commissioning Group CCG lookup tool</title>
+        <meta name="description" content="Find a ICB (CCG) by postcode">
+        <title>Clinical Commissioning Group CCG (now ICB) lookup tool</title>
 
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 
@@ -31,15 +31,15 @@
 
         <div class="pure-g">
             <div class="pure-u-1">
-                <h1>Postcode to CCG lookup tool</h1>  
+                <h1>Postcode to <strike>CCG</strike> ICB lookup tool</h1>  
             </div>
         </div>
 
         <div class="pure-g">
             <div class="pure-u-1">
                 <form class="pure-form">
-                    <p class="nhs-tool">The NHS now has it's own offical lookup tool, that is probably better for most uses <a href="https://www.nhs.uk/service-search/other-services/Clinical-Commissioning-Group/LocationSearch/1">Find it here</a></p>    
-                    <p class="explain">Enter a postcode below and hit return/enter to see CCG Name and codes below.</p>
+                    <p class="explain">CCGs were replaced by Integrated Care Boards in July 2022, so the tool now returns the name of the ICB instead of CCG.</p>
+                    <p class="explain">Enter a postcode below and hit return/enter to see ICB Name below.</p>
                     <fieldset>
                         
                         <label for="postcode">Postcode</label>
@@ -54,7 +54,7 @@
         <div class="pure-g">
             <div class="pure-u-1">
                 <div id="output" role="region" aria-live="assertive">
-                    <p class="placeholder">CCG details will appear here</p>
+                    <p class="placeholder">ICB name will appear here</p>
                 </div>
             </div>
         </div>
