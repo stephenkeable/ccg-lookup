@@ -30,4 +30,5 @@ https://stephenkeable.github.io/ccg-lookup/
 ## Credits
 Lookup API from [postcodes.io](https://postcodes.io)
 
-Contains National Statistics data © Crown copyright and database right 2019
+### Thanks
+If you've found this project useful, [why not buy me a coffee :)](https://ko-fi.com/stephenkeable)
