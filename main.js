@@ -39,14 +39,10 @@ function lookup_ccg_by_postcode(postcode_field) {
             output_div.insertAdjacentElement("beforeend", ccg_name);
 
             if (data.result.codes.ccg) {
-                
-                if(ccg_nhs_codes[data.result.codes.ccg]) {  
                     
-                    var ccg_nhs_code = document.createElement("p");
-                    ccg_nhs_code.innerHTML = "<strong>NHS code:</strong> " + data.result.codes.ccg_id
-                    output_div.insertAdjacentElement("beforeend", ccg_nhs_code);
-                    
-                }
+                var ccg_nhs_code = document.createElement("p");
+                ccg_nhs_code.innerHTML = "<strong>NHS code:</strong> " + data.result.codes.ccg_id
+                output_div.insertAdjacentElement("beforeend", ccg_nhs_code);
                 
                 var ccg_ons_code = document.createElement("p");
                 ccg_ons_code.innerHTML = "<strong>ONS/GSS code:</strong> " + data.result.codes.ccg;
