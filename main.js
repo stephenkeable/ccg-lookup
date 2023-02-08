@@ -65,9 +65,10 @@ function lookup_ccg_by_postcode(postcode_field) {
             output_div.innerHTML = "";
 
             var ccg_name = document.createElement("p");
-            ccg_name.innerHTML = "<strong>CCG Name:</strong> " + data.result.ccg;
+            ccg_name.innerHTML = "<strong>ICB Name:</strong> " + data.result.ccg;
             output_div.insertAdjacentElement("beforeend", ccg_name);
 
+            /*
             if (data.result.codes.ccg) {
                 
                 if(ccg_nhs_codes[data.result.codes.ccg]) {  
@@ -83,6 +84,7 @@ function lookup_ccg_by_postcode(postcode_field) {
                 output_div.insertAdjacentElement("beforeend", ccg_ons_code);
                 
             }
+            */
 
         } else {
 
