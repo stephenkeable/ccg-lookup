@@ -2,36 +2,6 @@ var postcode_field = document.getElementById("postcode");
 var lookup_button = document.getElementById("lookup");
 var output_div = document.getElementById("output");
 
-// Load ONS to NHS codes JSON
-
-var ccg_nhs_codes = {};
-
-var codes_request_url = "ccg-data.min.json";
-    
-var codes_request = new XMLHttpRequest();
-
-codes_request.open('GET', codes_request_url, true);
-
-codes_request.onload = function() {
-    if (codes_request.status === 200) {
-
-        ccg_nhs_codes = JSON.parse(codes_request.responseText);
-
-    } else {
-
-        //console.error(codes_request.status + " error from API");
-
-    }
-};
-
-codes_request.onerror = function() {
-
-    //console.error("Connection error from API");
-
-};
-
-codes_request.send();
-
 // Events
 
 postcode_field.addEventListener("keyup", function(e) {
@@ -68,13 +38,12 @@ function lookup_ccg_by_postcode(postcode_field) {
             ccg_name.innerHTML = "<strong>ICB Name:</strong> " + data.result.ccg;
             output_div.insertAdjacentElement("beforeend", ccg_name);
 
-            /*
             if (data.result.codes.ccg) {
                 
                 if(ccg_nhs_codes[data.result.codes.ccg]) {  
                     
                     var ccg_nhs_code = document.createElement("p");
-                    ccg_nhs_code.innerHTML = "<strong>NHS code:</strong> " + ccg_nhs_codes[data.result.codes.ccg]
+                    ccg_nhs_code.innerHTML = "<strong>NHS code:</strong> " + data.result.codes.ccg_id
                     output_div.insertAdjacentElement("beforeend", ccg_nhs_code);
                     
                 }
@@ -84,7 +53,6 @@ function lookup_ccg_by_postcode(postcode_field) {
                 output_div.insertAdjacentElement("beforeend", ccg_ons_code);
                 
             }
-            */
 
         } else {
 
